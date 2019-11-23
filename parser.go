@@ -16,6 +16,7 @@ type Rule struct {
 }
 
 func (r *Rule) IsValid() error {
+	a
 	if len(r.Comparator) > 0 {
 		if len(r.Rules) == 0 {
 			return errors.New(`"Rules" must not be empty in complex mode`)
